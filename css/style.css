@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 500px;
+  background: rgb(19, 64, 96);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 33, 47, 0.961) 0%,
+    rgba(12, 11, 45, 0.95) 19%,
+    rgb(10, 39, 45) 62%,
+    rgb(31, 19, 41) 95%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_area {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+}
+textarea {
+  height: 160px;
+  padding: 10px;
+  font-size: 25px;
+  width: 100%;
+  resize: none;
+  border: 3px solid rgb(32, 64, 64);
+  border-radius: 10px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  font-size: 22px;
+  border-radius: 6px;
+  font-family: monospace;
+  margin: 3px 2px;
+  padding: 12px 18px;
+  background-color: #7f8c8d;
+  color: #fff;
+}
+.space {
+  width: 400px;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+/*==============Responsive Part==================*/
+@media (max-width: 760px) {
+  button {
+    font-size: 18px;
+    border-radius: 6px;
+    font-family: monospace;
+    margin: 2px 2px;
+    padding: 7px 13px;
+    background-color: #7f8c8d;
+    color: #fff;
+  }
+}
+@media (max-width: 607px) {
+  button {
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin: 1px 2px;
+    padding: 6px 12px;
+    background-color: #7f8c8d;
+    color: #fff;
+  }
+}
+@media (max-width: 559px) {
+  button {
+    font-size: 13px;
+    border-radius: 3px;
+    font-family: monospace;
+    margin: 2px 1px;
+    padding: 5px 10px;
+    background-color: #7f8c8d;
+    color: #fff;
+  }
+}
+@media (max-width: 468px) {
+  button {
+    font-size: 11px;
+    border-radius: 3px;
+    font-family: monospace;
+    margin: 2px 1px;
+    padding: 5px 8px;
+    background-color: #7f8c8d;
+    color: #fff;
+  }
+}
+@media (max-width: 390px) {
+  button {
+    font-size: 10px;
+    border-radius: 2px;
+    font-family: monospace;
+    margin: 2px 1px;
+    padding: 5px 6px;
+    background-color: #7f8c8d;
+  }
+  .space {
+    width: 320px;
+  }
+}
+/*==============Responsive Part==================*/
